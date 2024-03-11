@@ -1,0 +1,86 @@
+/* .book{
+    background-color: red;
+}
+#pen{
+    color: green;
+}
+
+div.items>p{
+color: yellow;
+
+}
+#animal span{
+    background-color: pink;
+}
+
+.animal {
+
+    color: blue;
+}
+
+div>.parag{
+
+background-color: green;
+
+
+} */
+/* 
+ div+span{
+    background-color: red;
+} */
+
+/* .items div~span{
+    color: pink;
+
+    
+} */
+
+
+/* .items div>p{
+
+background-color: yellow;
+} */
+
+
+/* nav>ul>li:first-child{
+
+    background-color: gold;
+} */
+
+
+/* nav ul li:nth-last-of-type(2){
+
+background-color: yellow;
+
+}
+
+nav ul li:nth-of-type(5){
+
+    color: green;
+} */
+
+/* .items>span:nth-of-type(1){
+
+
+    background-color: blue;
+} */
+
+/* 
+nav ul li:nth-of-type(2n)
+{
+color: gold;
+
+} */
+
+/* nav ul li:nth-of-type(2n+3){
+
+    background-color: red;
+} */
+
+
+
+
+
+
+
+
