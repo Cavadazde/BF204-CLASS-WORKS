@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  column-gap: 2rem;
+}
+.header {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url(bg-masthead.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+#banner div h1 {
+  font-size: 70px;
+  color: white;
+}
+#banner div p {
+  max-width: 600px;
+  font-size: 20px;
+  color: rgb(218, 236, 252);
+}
+
+hr {
+  width: 40px;
+  border: 2px solid red;
+}
+#banner .banner {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.banner a {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 160px;
+  padding: 20px 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+.banner {
+  text-align: center;
+}
+#services {
+  background-color: red;
+  height: 45vh;
+}
+
+.cards {
+  display: flex;
+  column-gap: 2rem;
+}
+.extra-info > h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.extra-info {
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  padding: 20px;
+}
+.card h3 {
+  margin: 20px 0;
+}
+
+.card i {
+  font-size: 40px;
+  color: red;
+}
+
+#hr2 {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 5rem;
+}
+#services div h1 {
+  font-size: 70px;
+  color: white;
+}
+#services div p {
+  max-width: 600px;
+  font-size: 20px;
+  color: rgb(218, 236, 252);
+}
+
+hr {
+  width: 40px;
+  border: 2px solid red;}
