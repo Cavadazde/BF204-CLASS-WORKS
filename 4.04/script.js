@@ -33,7 +33,7 @@ class User extends Human{
    }
 
    if(bio.length>30){
-    window.alert("Password can be max 30 characters")
+    window.alert("Bio can be max 30 characters")
    }
 
  }
@@ -52,4 +52,4 @@ class User extends Human{
 
  
 }
-console.log()
+console.log(User)
