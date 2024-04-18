@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-4 navlogo">
+              <div class="logoname">
+                <h2>Suppliers</h2>
+              </div>
+            </div>
+
+            <div class="col-4 navlogo d-flex justify-content-between">
+              <div class="logoname">
+                <input type="text" class="searchInp" placeholder="" />
+                <button>Ascending</button>
+              </div>
+            </div>
+
+            <div class="col-4 navlogo">
+              <div class="logoname">
+                <ul
+                  style="list-style: none"
+                  class="d-flex justify-content-between"
+                >
+                  <li>
+                    <a href="" style="text-decoration: none; color: white"
+                      >Supplier Lists</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      style="text-decoration: none; color: white= new Url"
+                    >
+                      Add or Update</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <form class="form mt-5 p-5">
+        <div class="form-group py-3">
+          <label for="exampleInputEmail1">Company Name</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group py-3">
+          <label for="exampleInputPassword1">Street</label>
+          <input
+            type="password"
+            class="form-control"
+            id="a"
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="form-group py-3">
+          <label for="exampleInputPassword1">Phone</label>
+          <input
+            type="password"
+            class="form-control"
+            id="b"
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="form-group py-3">
+          <label for="exampleInputPassword1">City</label>
+          <input
+            type="password"
+            class="form-control"
+            id="c"
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="form-group py-3">
+          <label for="exampleInputPassword1">Country</label>
+          <input
+            type="password"
+            class="form-control"
+            id="d"
+            placeholder="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+    integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script type="module" src="./form.js"></script>
+  </body>
+</html>

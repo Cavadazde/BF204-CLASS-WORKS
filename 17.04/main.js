@@ -49,6 +49,7 @@
 
 
 import { BASE_URL } from "./constant.js";
+import { deleteDataById } from "./services.js";
 const table = document.querySelector(".table")
 let tbody = document.querySelector('.table tbody')
 let searchInp = document.querySelector('.searchInp')
@@ -104,9 +105,41 @@ function renderTable(data) {
     <td scope="row">${element.address.phone}</td>
     <td scope="row">${element.address.city},${element.address.country}</td>
   
-    <td><button class ="btn btn-primary" data-id = ${element.id}">Edit</button></td>
-    <td><button class ="btn btn-success" data-id = ${element.id}">Delete</button></td>
+    <td><button class ="btn btn-primary edit-btn" data-id = ${element.id}">Edit</button></td>
+    <td><button class ="btn btn-success delete-btn" data-id=${element.id}>Delete</button></td>
     <td><a class ="btn btn-warning" data-id = ${element.id} href="details.html?id=${element.id}">Details</a></td>
     </tr>`
+
+    //delete button
+    const deleteBtns=document.querySelectorAll(".delete-btn");
+    deleteBtns.forEach((btn) => {
+        btn.addEventListener("click",function(){
+            const id =this.getAttribute("data-id");
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!",
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  deleteDataById(element.id);
+                  this.closest("tr").remove()
+                  Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success",
+                  });
+                }
+              });
+        })
+
     });
+    });
+
+
+    // edit button
 }
+

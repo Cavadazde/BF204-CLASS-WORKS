@@ -33,7 +33,7 @@ function drawCard(data) {
   <div class="card-body">
     <h5 class="card-title">${data.companyName}</h5>
     <p class="card-text">${data.contactTitle}</p>
-    <p class="card-text">ADDRESS:${data.address.country},${data.address.city}</p>
+    <p class="card-text">ADDRESS:${data.address.city},${data.address.country}</p>
     <a href="./index.html" class="btn btn-primary">Go back</a>
   </div>
 </div>
