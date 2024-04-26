@@ -1,12 +1,13 @@
-import {nanoid} from 'nanoid'
+import { nanoid } from 'nanoid'
 
-class TodoItem{
+//todo item class
+class TodoItem {
 
-    constructor(title){
-        this.title=title;
-        this.id=nanoid();
-        this.createdAt=new Date();
-        this.isDone=false;
+    constructor(title) {
+        this.title = title;
+        this.id = nanoid();
+        this.createdAt = new Date();
+        this.isDone = false;
     }
 }
 export default TodoItem;
