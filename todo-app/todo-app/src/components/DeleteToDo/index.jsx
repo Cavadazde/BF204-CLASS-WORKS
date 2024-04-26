@@ -1,0 +1,21 @@
+import PropTypes from "prop-types";
+
+const DeleteToDo = ({ id, setTodos }) => {
+  function handleDelete() {
+    if (window.confirm("are you sure delete")) {
+      setTodos((todos) => {
+        return todos.filter((todo) => {
+          return todo.id != id;
+        });
+      });
+    }
+  }
+  return <button onClick={handleDelete}>Delete</button>;
+};
+
+DeleteToDo.propTypes = {
+  id: PropTypes.string.isRequired,
+  setTodos: PropTypes.func,
+};
+
+export default DeleteToDo;
